@@ -34,15 +34,17 @@
 
         <div class="header-top" style="padding-bottom:30px;">
             <div class="container">
-                <div class="row text-left float-left mb-10">
+                <div class="row text-left float-right mb-10">
 
-                <div class="header-top-left no-padding ">
+                    <div class="header-top-left no-padding ">
                         <ul>
                             <li><a href="<?= url('login') ?>"><span class="lnr lnr-enter-down"></span><span style="font-size:15px;">  Login</span></a></li>
                             <li><a href="<?= url('register') ?>"><span class="lnr lnr-user"></span><span style="font-size:15px;">  Register</span></a></li>
 
                         </ul>
                     </div>
+                </div>
+                <div class="row text-left float-left mb-10">
 
                     <div class="header-top-left no-padding text-dark">
                         <ul>
@@ -55,12 +57,8 @@
         </div>
         <div class="logo-wrap">
             <div class="container">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col-lg-4 col-md-4 col-sm-12 logo-left no-padding">
-                        <a href="http://localhost/OnlineNewsSite/">
-                            <img class="img-fluid" src="<?=asset($setting['logo'])?>" alt="">
-                        </a>
-                    </div>
+                <div class="row justify-content-center align-items-center">
+                    
                     <div class="col-lg-8 col-md-8 col-sm-12 logo-right no-padding ads-banner">
                         <img class="img-fluid" src="<?=asset($bodyBanner['image'])?>" alt="">
                     </div>
@@ -70,16 +68,8 @@
         <div class="container main-menu" id="main-menu">
             <div class="row align-items-center justify-content-between">
             <div class="navbar-right">
-                    <form class="Search">
-                        <input type="text" class="form-control Search-box text-left" name="Search-box" id="Search-box" placeholder="Search">
-                        <label for="Search-box" class="Search-box-label">
-								<span class="lnr lnr-magnifier"></span>
-							</label>
-                        <span class="Search-close">
-								<span class="lnr lnr-cross"></span>
-                        </span>
-                    </form>
-                </div>
+                    
+            </div>
             <nav id="nav-menu-container">
                     <ul class="nav-menu">
                             <?php foreach ($menus as $menu) {?>
